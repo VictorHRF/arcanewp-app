@@ -1,14 +1,14 @@
 import React from 'react'
-import { getEpisodesBySeason } from '../helpers'
-import { BoxContainer } from './BoxContainer'
+import { BoxContainer } from './BoxContainer';
+import { getEpisodesBySeason } from '../helpers';
 
 export const GridEpisodes = ( { season } ) => {
-
-const temporada = getEpisodesBySeason( season );
-const { episodios } = temporada;
+  const temporada = getEpisodesBySeason( season );
+  const { episodios } = temporada;
 
   return (
-    <section className='cuadricula'>
+    <div>
+      <section className='cuadricula'>
         {
           episodios.map( episodio => (
               <BoxContainer key={episodio.id} titulo={ episodio.titulo } capitulo={ episodio.num_capitulo } />
@@ -17,5 +17,6 @@ const { episodios } = temporada;
         }
 
       </section>
+    </div>
   )
 }

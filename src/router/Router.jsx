@@ -1,7 +1,8 @@
 import React from 'react'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import { Arcane } from '../Arcane';
-import { PersonajesPage, EpisodiosPage, FavoritosPage, HomePage } from '../pages'
+import { PersonajesPage, EpisodiosPage, FavoritosPage, HomePage, PersonajePage } from '../pages'
+import { GridPersonajes } from '../components';
 
 
 const router = createBrowserRouter([
@@ -14,8 +15,14 @@ const router = createBrowserRouter([
             element: <HomePage />
           },
           {
-            path: "/personajes",
-            element: <PersonajesPage />
+            path: "/personajes/",
+            element: <PersonajesPage />,
+            children: [
+              {
+                path: ":personajeId",
+                element: <PersonajePage />
+              }
+            ]
           },
           {
             path: "/episodios",
