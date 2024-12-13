@@ -27,7 +27,7 @@ export const personajes = [
         "id": "caitlyn",
         "nombre": "Caitlyn",
         "descripcion": "Sheriff de Piltover con una mentalidad astuta y una puntería impecable, trabaja para proteger la ciudad.",
-        "imagen": "cayth.jpg"
+        "imagen": "Caitlyn.jpg"
       },
       {
         "id": "silco",
@@ -39,7 +39,7 @@ export const personajes = [
         "id": "heimerdinger",
         "nombre": "Heimerdinger",
         "descripcion": "Un yordle sabio y respetado, miembro del Consejo de Piltover, dedicado a preservar el equilibrio en la ciudad.",
-        "imagen": "heimer.jpg"
+        "imagen": "Heimerdinger.jpg"
       },
       {
         "id": "ekko",

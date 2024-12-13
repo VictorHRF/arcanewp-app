@@ -6,3 +6,5 @@ export * from './GridEpisodes';
 export * from './GridPersonajes';
 export * from './TituloSeccion';
 export * from './PersonajeCard';
+export * from './MobileWallpapers';
+export * from './PcWallpapers';

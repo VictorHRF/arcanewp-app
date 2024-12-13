@@ -1,5 +1,4 @@
 import React from 'react'
-import { BoxContainer } from './BoxContainer'
 import { Link, Outlet } from 'react-router-dom'
 import { personajes } from '../data/personajes'
 import { TituloSeccion } from './TituloSeccion'
@@ -17,7 +16,7 @@ export const GridPersonajes = () => {
       <section className='cuadricula'>
           {
             characters.map( p => (
-                <Link key={p.id} to={`/personajes/${p.id}`}>
+                <Link key={p.id} to={`/personajes/${p.id}/pc`}>
                   <PersonajeCard nombre={p.nombre} img={p.imagen} />
                 </Link>
               )

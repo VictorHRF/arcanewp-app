@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import { Arcane } from '../Arcane';
 import { PersonajesPage, EpisodiosPage, FavoritosPage, HomePage, PersonajePage } from '../pages'
-import { GridPersonajes } from '../components';
+import { GridPersonajes, MobileWallpapers, PcWallpapers } from '../components';
 
 
 const router = createBrowserRouter([
@@ -19,8 +19,18 @@ const router = createBrowserRouter([
             element: <PersonajesPage />,
             children: [
               {
-                path: ":personajeId",
-                element: <PersonajePage />
+                path: ":personajeId/",
+                element: <PersonajePage />,
+                children: [
+                  {
+                     path: "mobile",
+                     element: <MobileWallpapers />
+                  },
+                  {
+                     path: "pc",
+                     element: <PcWallpapers />
+                  },
+                ]
               }
             ]
           },

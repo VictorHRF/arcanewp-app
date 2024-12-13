@@ -4,14 +4,14 @@ import { Outlet, useMatch } from 'react-router-dom';
 
 export const PersonajesPage = () => {
 
-  const match = useMatch("/personajes/:nombre");
+  const match = useMatch("/personajes" );
 
   return (
     <>
 
       <Encabezado titulo={"Personajes"} />
       {
-        match ? <Outlet /> : <GridPersonajes />
+        match ? <GridPersonajes /> : <Outlet />
       }
 
     </>
