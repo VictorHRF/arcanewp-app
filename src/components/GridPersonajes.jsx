@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { personajes } from '../data/personajes'
 import { TituloSeccion } from './TituloSeccion'
 import { PersonajeCard } from './PersonajeCard'
@@ -9,20 +9,21 @@ export const GridPersonajes = () => {
   const characters = personajes;
 
   return (
-    <div className='seccion'>
+    <section className='seccion'>
       
       <TituloSeccion title={"Lista de Personajes"} />
 
-      <section className='cuadricula'>
+      <div className='characters-grid'>
           {
             characters.map( p => (
-                <Link key={p.id} to={`/personajes/${p.id}/pc`}>
+                <Link key={p.id} to={`/personajes/${p.id}/mobile`}>
                   <PersonajeCard nombre={p.nombre} img={p.imagen} />
                 </Link>
               )
             )
           }
-        </section>
-    </div>
+        </div>
+
+    </section>
   )
 }

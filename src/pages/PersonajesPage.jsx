@@ -8,12 +8,11 @@ export const PersonajesPage = () => {
 
   return (
     <>
-
       <Encabezado titulo={"Personajes"} />
+      
       {
         match ? <GridPersonajes /> : <Outlet />
       }
-
     </>
   ) 
 }

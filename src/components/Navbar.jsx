@@ -2,18 +2,17 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/engranesvg.svg';
 
-export const Header = () => {
+export const Navbar = () => {
 
   return (
     <>
-        <div className='top'></div>
-        <nav className='background'>
-            <div className='header'>
+        <nav className='header-border'>
+            <div className='nav-bar'>
               <div className='enlaces'>
                 <Link
                   to="/"
                 >
-                    <img className='arcane-logo' src='src/assets/Arcane_logo_icon.webp' />
+                    <img className='arcane-logo' src='/src/assets/Arcane_logo_icon.webp' />
                 </Link>
 
                 <NavLink
@@ -27,7 +26,7 @@ export const Header = () => {
                   className={ ({isActive}) => `enlace ${ isActive ? 'active' : ''}` }
                   to="/episodios"
                 >
-                    Capitulos
+                    Episodios
                 </NavLink>
 
                 <NavLink
