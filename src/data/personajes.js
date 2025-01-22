@@ -54,9 +54,21 @@ export const personajes = [
         "imagen": "mel.jpg"
       },
       {
-        "id": "sevika",
-        "nombre": "Sevika",
-        "descripcion": "La mano derecha de Silco, conocida por su lealtad y su brazo mecánico mortal.",
-        "imagen": "sevika.jpg"
-      }
+        "id": "ambessa",
+        "nombre": "Ambessa",
+        "descripcion": "Ambessa, guerrera noxiana y madre de Mel, ha jurago proteger el nombre de su familia... incluso si eso la pone en contra de los deseos de su propia hija.",
+        "imagen": "ambessa.jpg"
+      },
+      {
+        "id": "isha",
+        "nombre": "isha",
+        "descripcion": "Isha, ",
+        "imagen": "isha.jpg"
+      },
+      {
+        "id": "warwick",
+        "nombre": "Warwick",
+        "descripcion": "Warwick, una bestia creada por Singed, se debate entre su ira primigenia y la humanidad fragmentada que aún habita en su interior.",
+        "imagen": "warwick.jpg"
+      },
     ]

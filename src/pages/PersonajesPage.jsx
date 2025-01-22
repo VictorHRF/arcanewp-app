@@ -1,5 +1,6 @@
 import React from 'react'
-import { Encabezado, GridPersonajes } from '../components'
+import { Encabezado } from '../components/Encabezado'
+import { GridPersonajes } from '../components/GridPersonajes'
 import { Outlet, useMatch } from 'react-router-dom';
 
 export const PersonajesPage = () => {

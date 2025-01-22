@@ -1,12 +1,12 @@
 import React from 'react'
+import { useState } from 'react';
+import { Download } from 'yet-another-react-lightbox/plugins';
 import { useParams } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import "yet-another-react-lightbox/styles.css"
 import { getHorizontalWallpapersByCharacter } from '../helpers'
 import { TituloSeccion } from './TituloSeccion';
 import { CharacterCard } from './CharacterCard';
-import { useState } from 'react';
-import { Download } from 'yet-another-react-lightbox/plugins';
 
 export const GridHorizontal = () => {
 
@@ -22,10 +22,10 @@ export const GridHorizontal = () => {
             <div className='grid-horizontal-container'>
                 {
                     wallpapers.map( p => (
-                    <a key={p.alt} onClick={() => setIndex(p.alt.split(' ')[1])}>
-                        <CharacterCard key={ p.alt } character={personajeId} img={p.name} alt={p.alt} />
-                    </a>
-                    )
+                        <a key={p.id} onClick={() => setIndex(p.id.split('h')[1])}>
+                            <CharacterCard character={personajeId} img={p.name} alt={p.alt} />
+                        </a>
+                        )
                     )
                 }
             </div>

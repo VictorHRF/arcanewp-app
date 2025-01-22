@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { CharacterCard, TituloSeccion } from '../components'
+import { CharacterCard } from './CharacterCard'
+import {  TituloSeccion } from './TituloSeccion'
 import { getVerticalWallpaperByCharacter } from '../helpers/getVerticalWallpaperByCharacter'
 import { Link, useParams } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
