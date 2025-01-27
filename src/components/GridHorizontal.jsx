@@ -22,7 +22,7 @@ export const GridHorizontal = () => {
             <div className='grid-horizontal-container'>
                 {
                     wallpapers.map( p => (
-                        <a key={p.id} onClick={() => setIndex(p.id.split('h')[1])}>
+                        <a key={p.id} onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))} >
                             <CharacterCard character={personajeId} img={p.name} alt={p.alt} />
                         </a>
                         )

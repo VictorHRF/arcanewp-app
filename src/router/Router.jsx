@@ -2,8 +2,8 @@ import React from 'react'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import { Arcane } from '../Arcane';
 import { PersonajesPage, EpisodiosPage, FavoritosPage, HomePage, PersonajePage, EpisodioPage } from '../pages'
-import { PcWallpapers } from '../components/PcWallpapers'
-import { MobileWallpapers } from '../components/MobileWallpapers'
+import { GridHorizontal } from '../components/GridHorizontal';
+import { GridVertical } from '../components/GridVertical';
 
 
 const router = createBrowserRouter([
@@ -24,12 +24,12 @@ const router = createBrowserRouter([
                 element: <PersonajePage />,
                 children: [
                   {
-                     path: "mobile",
-                     element: <MobileWallpapers />
+                    path: "pc",
+                    element: <GridHorizontal />
                   },
                   {
-                     path: "pc",
-                     element: <PcWallpapers />
+                     path: "mobile",
+                     element: <GridVertical />
                   },
                 ]
               }
