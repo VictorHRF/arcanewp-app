@@ -8,12 +8,12 @@ export const PersonajesPage = () => {
   const match = useMatch("/personajes" );
 
   return (
-    <>
+    <div className='fondo'>
       <Encabezado titulo={"Personajes"} />
       
       {
         match ? <GridPersonajes /> : <Outlet />
       }
-    </>
+    </div>
   ) 
 }
