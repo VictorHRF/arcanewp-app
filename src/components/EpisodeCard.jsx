@@ -4,7 +4,7 @@ export const EpisodeCard = ({id, num_capitulo, titulo, descripcion, duracion, im
     return (
         <>
           <div className='episode-card'>
-            <img className='episode-img' src={`/src/images/episodes/${imagen_portada}`} alt={titulo} />
+            <img className='episode-img' src={`/images/episodes/${imagen_portada}`} alt={titulo} />
 
             <div className='episode-info'>
               <div className='hover-box"'>

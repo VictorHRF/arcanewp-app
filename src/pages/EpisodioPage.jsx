@@ -22,7 +22,7 @@ export const EpisodioPage = () => {
         {
           images.map( img => (
             <a key={img.id} onClick={() => setIndex(img.id.split('img')[1])}>
-              <img className='episode-image' src={`/src/images/episodes/${img.url}`} alt={img.alt} />
+              <img className='episode-image' src={`/images/episodes/${img.url}`} alt={img.alt} />
             </a>
           ))
         }
@@ -33,7 +33,7 @@ export const EpisodioPage = () => {
           index={index}
           controller={ {closeOnBackdropClick: true, closeOnPullDown: true} }
           close={() => setIndex(-1)}
-          slides={images.map( p => ({ src: `/src/images/episodes/${p.url}`, alt: p.id, download: `/src/images/episodes/${p.url}?download` }) )}
+          slides={images.map( p => ({ src: `/images/episodes/${p.url}`, alt: p.id, download: `/images/episodes/${p.url}?download` }) )}
           plugins={[Download]}
       />
 

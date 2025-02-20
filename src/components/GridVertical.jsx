@@ -34,7 +34,7 @@ export const GridVertical = () => {
                 index={index}
                 controller={ {closeOnBackdropClick: true, closeOnPullDown: true} }
                 close={() => setIndex(-1)}
-                slides={wallpapers.map( p => ({ src: `/src/images/characters/${personajeId}/${p.name}`, alt: p.alt, download: `/src/images/characters/${personajeId}/${p.name}?download` }) )}
+                slides={wallpapers.map( p => ({ src: `/images/characters/${personajeId}/${p.name}`, alt: p.alt, download: `/images/characters/${personajeId}/${p.name}?download` }) )}
                 plugins={[Download]}
             />
         </section>
