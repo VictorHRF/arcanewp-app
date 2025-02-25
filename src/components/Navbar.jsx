@@ -12,7 +12,7 @@ export const Navbar = () => {
                 <Link
                   to="/"
                 >
-                    <img className='arcane-logo' src='/src/assets/Arcane_logo_icon.png' alt='Arcane Logo' />
+                    <img className='arcane-logo' src='/images/Arcane_logo_icon.webp' alt='Arcane Logo' />
                 </Link>
 
                 <NavLink
