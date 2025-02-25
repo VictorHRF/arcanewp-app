@@ -17,8 +17,8 @@ export const GridEpisodes = () => {
         <div className='episodes-grid'>
           {
             temp1.map( ep => (
-              <Link className='link-style' key={ep.id} to={`/episodios/${ep.id}`}>
-                <EpisodeCard key={ep.id} {...ep} />
+              <Link className='episode-container' key={ep.id} to={`/episodios/${ep.id}`}>
+                <EpisodeCard className='episode-item' key={ep.id} {...ep} />
               </Link>
               )
             )
@@ -28,7 +28,7 @@ export const GridEpisodes = () => {
         <div className='episodes-grid'>
           {
             temp2.map( ep => (
-              <Link className='link-style' key={ep.id} to={`/episodios/${ep.id}`}>
+              <Link className='episode-container' key={ep.id} to={`/episodios/${ep.id}`}>
                 <EpisodeCard {...ep} />
               </Link>
               )
