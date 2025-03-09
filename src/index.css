@@ -15,6 +15,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #ffbf00;
 }
 
 /* Hero */
@@ -231,13 +233,17 @@
 
 /* Lista de personajes */
 
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
 @media (min-width: 768px) {
 
   .characters-grid {
-      display: grid;
       grid-template-columns: repeat(4, 1fr);
       column-gap: 10px;
-      row-gap: 10px;
     }
 
     .seccion {
@@ -253,19 +259,16 @@
 }
 
 .character-card {
+  aspect-ratio: 9/16;
+  border: 4px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   position: relative;
-  width: 100%;
 }
 
-.character-card:hover {
-  opacity: 0.8;
-  transform: scale(1.02);
-}
-
-.personaje-img {
+.character-img {
   width: 100%;
-  height: auto;
-  border-radius: 2%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .character-card h3 {
@@ -321,6 +324,13 @@
   border-radius: 5px;
 }
 
+.grid-horizontal-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
 /* Vertical - Horizontal wallpapers */
 
 @media (min-width: 768px) {
@@ -333,24 +343,26 @@
   }
 
   .grid-horizontal-container {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
-    row-gap: 10px;
   }
 }
 
 /* EPISODIOS PAGE */
 
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
 @media (min-width: 768px) {
   
   .episodes-grid {
     width: 100%;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
-    row-gap: 10px;
   }
 
 }
@@ -410,12 +422,12 @@
 
 /* Episode images */
 
-.image-container {
+.horizontal-image-container {
   aspect-ratio: 16/9;
-  border: 4px solid rgba(0, 0, 0, 0.5);
+  border: 4px solid rgba(0, 0, 0, 1);
 }
 
-.image-container:hover {
+.horizontal-image-container:hover {
   border: 4px solid #ffbf00;
   cursor: pointer;
 }

@@ -16,7 +16,7 @@ export const GridPersonajes = () => {
       <div className='characters-grid'>
           {
             characters.map( p => (
-                <Link key={p.id} to={`/personajes/${p.id}/pc`}>
+                <Link className='character-card' key={p.id} to={`/personajes/${p.id}/pc`}>
                   <PersonajeCard nombre={p.nombre} img={p.imagen} />
                 </Link>
               )
