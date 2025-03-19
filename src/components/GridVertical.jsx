@@ -21,7 +21,7 @@ export const GridVertical = () => {
           <div className='grid-vertical-container'>
               {
                 wallpapers.map( p => (
-                  <Link key={p.alt} onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))}>
+                  <Link className='vertical-image-container' key={p.alt} onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))}>
                     <CharacterCard key={ p.alt } character={personajeId} img={p.name} alt={p.alt} />
                   </Link>
                   )
