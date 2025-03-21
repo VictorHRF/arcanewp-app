@@ -19,6 +19,47 @@
   --primary-color: #ffbf00;
 }
 
+/* Generales - Fonts */
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subtitulo {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffbf00;
+}
+
+.second-text {
+  color: #bbbaba;
+  font-style: italic;  
+}
+
+/* titulo */
+
+.header {
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  height: 60px;
+  background-image: url("assets/jinx-fondo.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: left;
+  align-items: center;
+}
+
+.titulo {
+  margin: 0 20px;
+  font-size: xx-large;
+  color: #ffbf00;
+}
+
 /* Hero */
 
 .hero {
@@ -79,7 +120,7 @@
   max-width: 10vw;
 }
 
-/* Creditos */
+/* Creditos - Footer*/
 
 .creditos {
   display: flex;
@@ -108,26 +149,6 @@
 .creditos a  {
   text-decoration: none;
   color: #ffbf00;
-}
-
-/* Fonts */
-
-.rubik-glitch-regular {
-  font-family: "Rubik Glitch", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.subtitulo {
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffbf00;
-}
-
-.second-text {
-  color: #bbbaba;
-  font-style: italic;  
 }
 
 /* Navbar */
@@ -194,28 +215,13 @@
   }
 }
 
-/* titulo */
-
-.header {
-  max-width: 90vw;
-  margin: 0 auto;
-  margin-top: 20px;
-  display: flex;
-  height: 60px;
-  background-image: url("assets/jinx-fondo.jpg");
-  background-size: cover;
-  background-position: center center;
-  text-align: left;
-  align-items: center;
-}
-
-.titulo {
-  margin: 0 20px;
-  font-size: xx-large;
-  color: #ffbf00;
-}
-
 /* Secccion */
+
+.seccion {
+  max-width: 1440px;
+  margin: 20px auto;
+  padding: 10px;
+}
 
 .titulo-section {
   text-align: center;
@@ -223,12 +229,6 @@
   padding: 10px 0px;
   max-width: 90vw;
   margin: 0 auto;
-}
-
-.seccion {
-  max-width: 1440px;
-  margin: 20px auto;
-  padding: 10px;
 }
 
 /* Lista de personajes */
@@ -271,12 +271,6 @@
   cursor: pointer;
 }
 
-.character-img {
-  width: 100%;
-  display: flex;
-  border-radius: 5px;
-}
-
 .character-card h3 {
   position: absolute;
   left: 50%;
@@ -288,6 +282,12 @@
   border-radius: 0px 0px 20px 20px;
   font-size: xx-large;
   text-align: center;
+}
+
+.character-img {
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
 }
 
 /*  Selector de categoria  */
@@ -331,35 +331,6 @@
   border-radius: 5px;
 }
 
-.grid-vertical-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 10px;
-}
-
-.grid-horizontal-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: 10px;
-}
-
-/* Vertical - Horizontal wallpapers */
-
-@media (min-width: 768px) {
-  
-  .grid-vertical-container {
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 10px;
-  }
-
-  .grid-horizontal-container {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-  }
-}
-
 /* EPISODIOS PAGE */
 
 .episodes-grid {
@@ -383,21 +354,16 @@
   border: 4px solid rgba(0, 0, 0, 0.5);
 }
 
-.episode-card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
-
 .episode-container:hover {
   border: 4px solid #ffbf00;
 }
 
-.episode-item {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+.episode-card {
+  position: relative;
   display: flex;
+  width: 100%;
+  height: 100%;
+  color: #fff;
   align-items: center;
   justify-content: center;
 }
@@ -406,7 +372,6 @@
   position: relative;
   width: 100%;
   height: auto;
-  border-radius: 1%;
 }
 
 .episode-info{
@@ -431,7 +396,34 @@
   display: block;
 }
 
-/* Episode images */
+/* Vertical - Horizontal wallpapers */
+
+.grid-vertical-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
+.grid-horizontal-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+}
+
+@media (min-width: 768px) {
+  
+  .grid-vertical-container {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+
+  .grid-horizontal-container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+  }
+}
 
 .horizontal-image-container {
   aspect-ratio: 16/9;
@@ -454,7 +446,7 @@
   cursor: pointer;
 }
 
-.episode-image {
+.image-bg {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
