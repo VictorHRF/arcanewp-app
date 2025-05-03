@@ -19,6 +19,16 @@
   --primary-color: #ffbf00;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Hero */
 
 .hero {
@@ -226,29 +236,27 @@
 }
 
 .seccion {
+  width: 90%;
   max-width: 1440px;
-  margin: 20px auto;
-  padding: 10px;
+  margin: 0 auto;
 }
 
 /* Lista de personajes */
 
 .characters-grid {
-  width: 100%;
   display: grid;
+  width: 100%;
+  align-items: center;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
+
 
   .characters-grid {
       grid-template-columns: repeat(4, 1fr);
       column-gap: 10px;
-    }
-
-    .seccion {
-      padding: 0px 0px;
     }
   
     .grid-container {
@@ -273,6 +281,7 @@
 
 .character-img {
   width: 100%;
+  height: 100%;
   display: flex;
   border-radius: 5px;
 }
@@ -342,6 +351,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
   row-gap: 10px;
 }
 
@@ -364,6 +375,7 @@
 
 .episodes-grid {
   display: grid;
+  margin: 0 auto;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 10px;
 }
@@ -372,6 +384,7 @@
   
   .episodes-grid {
     width: 100%;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
   }
@@ -379,6 +392,10 @@
 }
 
 .episode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   aspect-ratio: 16/9;
   border: 4px solid rgba(0, 0, 0, 0.5);
 }
@@ -386,7 +403,6 @@
 .episode-card {
   position: relative;
   width: 100%;
-  height: 100%;
   color: #fff;
 }
 
@@ -405,7 +421,6 @@
 .episode-img {
   position: relative;
   width: 100%;
-  height: auto;
   border-radius: 1%;
 }
 
@@ -434,6 +449,8 @@
 /* Episode images */
 
 .horizontal-image-container {
+  display: flex;
+  width: 100%;
   aspect-ratio: 16/9;
   border: 4px solid rgba(0, 0, 0, 1);
 }
