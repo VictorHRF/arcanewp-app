@@ -22,7 +22,7 @@ export const EpisodioPage = () => {
         {
           images.map( img => (
             <a key={img.id} onClick={() => setIndex(img.id.split('img')[1])}>
-              <img className='episode-image' src={`/images/episodes/${img.url}`} alt={img.alt} />
+              <img className='image-bg' src={`/images/episodes/${img.url}`} alt={img.alt} />
             </a>
           ))
         }

@@ -24,7 +24,7 @@ const [index, setIndex] = useState(-1);
             {
               favoriteWallpapers.map( fav => (
                 <a className='horizontal-image-container' key={fav.id} onClick={() => setIndex(fav.id.split('fav')[1])} >
-                  <img className='episode-image' src={`/images/${fav.url}`} alt={fav.alt} />
+                  <img className='image-bg' src={`/images/${fav.url}`} alt={fav.alt} />
                 </a>
               ))
             }
