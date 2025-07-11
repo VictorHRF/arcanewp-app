@@ -11,7 +11,7 @@ export const GridPersonajes = () => {
   return (
     <section className='seccion'>
       
-      <TituloSeccion title={"Lista de Personajes"} />
+      <TituloSeccion title={"Selecciona un personaje.."} />
 
       <div className='characters-grid'>
           {
