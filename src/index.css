@@ -49,7 +49,7 @@ html, body {
 
 .second-text {
   color: #bbbaba;
-  font-style: italic;  
+  font-style: italic;
 }
 
 /* titulo */
@@ -92,6 +92,7 @@ html, body {
 .hero-text {
   text-align: center;
   margin: 1.5rem auto;
+  color: #bbbaba;
 }
 
 .h-titulo {
@@ -168,15 +169,26 @@ footer {
   border-image-width: 0.20rem;
   color: #bbbaba;
   max-width: 90vw;
-  margin: 40px auto 0 auto;
+  margin: 60px auto 2% auto;
   padding: 20px;
   text-align: center;
   font-size: 1rem;
 }
 
 footer p {
-  margin: 10px auto;
+  margin: 16px auto;
   max-width: 80%;
+  margin: 10px auto;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #bbbaba;
+  text-decoration: none;
 }
 
 /* Navbar */
@@ -187,9 +199,9 @@ footer p {
 
 .enlace {
   font-weight: 600;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #bbbaba;
   text-decoration: inherit;
-  padding-bottom: 5px;
   margin: 10px;
 }
 
@@ -207,7 +219,7 @@ footer p {
 
 .header-border {
   position: relative;
-  border-image-source: radial-gradient(#d19d00, #ffdf7e, #ffbf00);
+  border-image-source: radial-gradient(#ffbf00, #f8d15a, #ffbf00);
   border-image-slice: 1 0 1 0;
   border-image-width: 0.25rem;
   max-width: 90vw;
@@ -253,7 +265,7 @@ footer p {
 
 .titulo-section {
   text-align: center;
-  font-size: xx-large;
+  font-size: 1.5rem;
   padding: 10px 0px;
   max-width: 90vw;
   margin: 0 auto;
@@ -331,20 +343,14 @@ footer p {
 
 /*  Selector de categoria  */
 
-.character-section {
+.category-selector-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 20px;
-}
-
-.t-personaje {
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .selector-dispositivo {
-  margin: 20px 0px;
   display: inline-flex;
   background-color: #130e0e;
   border-radius: 5px;
@@ -360,13 +366,13 @@ footer p {
 }
 
 .selector-item:hover {
-  background-color: #d19d00;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 5px;
 }
 
 .seleccionado {
-  background-color: #d19d00;
+  background-color: var(--primary-color);
   border-radius: 5px;
 }
 
@@ -538,4 +544,43 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Character Selector */
+
+.character-selector-container {
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-selector {
+  color: #bbbaba;
+  text-decoration: none;
+  border-right: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary-color);
+  padding: 0px 10px;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, .10);
+  border-radius: 4px;
+}
+.character-selector:hover {
+  background-color: rgba(0, 0, 0, .30);
+  color: #ffbf00;
+}
+
+.character-selector p {
+  margin: 0;
+  padding: 2px;
+  font-size: 1.2rem;
+  font-weight: bold;  
+}
+
+.character-active {
+  color: #ffbf00;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, .30);
+  border-radius: 20 px;
 }

@@ -1,22 +1,23 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-export const CategorySelector = ( { personajeId } ) => {
+export const CategorySelector = ( { personajeId, setDispositivo } ) => {
+
   return (
-    <div className='character-section'>
-        <h2 className='titulo t-personaje'>FONDOS DE PANTALLA {personajeId}</h2>
-        <div className='selector-dispositivo'>
-        <NavLink
-            className={({isActive}) => `selector-item ${ isActive ? 'seleccionado' : ''}`}
-            to={`/personajes/${personajeId}/pc`} >
-            Horizontal
-        </NavLink>
-        <NavLink 
-            className={({isActive}) => `selector-item ${ isActive ? 'seleccionado' : ''}`}
-            to={`/personajes/${personajeId}/mobile`} >
-            Vertical
-        </NavLink>
-        </div>
+  <div className='category-selector-container'>
+    <div className='selector-dispositivo'>
+      <NavLink
+          className={({isActive}) => `selector-item ${ isActive ? 'seleccionado' : ''}`}
+          onClick={() => setDispositivo("pc")}
+          to={`/personajes/${personajeId}/pc`} >
+          Horizontal
+      </NavLink>
+      <NavLink 
+          className={({isActive}) => `selector-item ${ isActive ? 'seleccionado' : ''}`}
+          onClick={() => setDispositivo("mobile")}
+          to={`/personajes/${personajeId}/mobile`} >
+          Vertical
+      </NavLink>
     </div>
+  </div>
   )
 }
