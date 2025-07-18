@@ -546,14 +546,15 @@ footer a {
   justify-content: center;
 }
 
-/* Character Selector */
+/* Character / Episode Selector */
 
 .character-selector-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   max-width: 90vw;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
+  margin: 20px auto;
+  justify-content: center;
 }
 
 .character-selector {
@@ -562,7 +563,6 @@ footer a {
   border-right: 2px solid var(--primary-color);
   border-left: 2px solid var(--primary-color);
   padding: 0px 10px;
-  margin: 20px 0;
   background-color: rgba(0, 0, 0, .10);
   border-radius: 4px;
 }
@@ -584,3 +584,5 @@ footer a {
   background-color: rgba(0, 0, 0, .30);
   border-radius: 20 px;
 }
+
+/* End character selector styles  */
