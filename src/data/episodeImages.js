@@ -4,7 +4,7 @@ export const episodeImages = [
     id: `S1E01-${i + 1}`,
     season: 1,
     episode: 1,
-    url: `season1/ep1/S01E01-${i + 1}.webp`,
+    url: `season1/ep1/S01E01img${i + 1}.webp`,
     urlDownload: `season1/ep1/S01E01-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 1 Season 1`
   })),
@@ -14,7 +14,7 @@ export const episodeImages = [
     id: `S1E02-${i + 1}`,
     season: 1,
     episode: 2,
-    url: `season1/ep2/S01E02-${i + 1}.webp`,
+    url: `season1/ep2/S01E02img${i + 1}.webp`,
     urlDownload: `season1/ep2/S01E02-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 2 Season 1`
   })),
@@ -23,7 +23,7 @@ export const episodeImages = [
     id: `S1E03-${i + 1}`,
     season: 1,
     episode: 3,
-    url: `season1/ep3/S01E03-${i + 1}.webp`,
+    url: `season1/ep3/S01E03img${i + 1}.webp`,
     urlDownload: `season1/ep3/S01E03-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 3 Season 1`
   })),
@@ -32,7 +32,7 @@ export const episodeImages = [
     id: `S1E04-${i + 1}`,
     season: 1,
     episode: 4,
-    url: `season1/ep4/S01E04-${i + 1}.webp`,
+    url: `season1/ep4/S01E04img${i + 1}.webp`,
     urlDownload: `season1/ep4/S01E04-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 4 Season 1`
   })),
@@ -41,7 +41,7 @@ export const episodeImages = [
     id: `S1E05-${i + 1}`,
     season: 1,
     episode: 5,
-    url: `season1/ep5/S01E05-${i + 1}.webp`,
+    url: `season1/ep5/S01E05img${i + 1}.webp`,
     urlDownload: `season1/ep5/S01E05-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 5 Season 1`
   })),
@@ -50,7 +50,7 @@ export const episodeImages = [
     id: `S1E06-${i + 1}`,
     season: 1,
     episode: 6,
-    url: `season1/ep6/S01E06-${i + 1}.webp`,
+    url: `season1/ep6/S01E06img${i + 1}.webp`,
     urlDownload: `season1/ep6/S01E06-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 6 Season 1`
   })),
@@ -59,7 +59,7 @@ export const episodeImages = [
     id: `S1E07-${i + 1}`,
     season: 1,
     episode: 7,
-    url: `season1/ep7/S01E07-${i + 1}.webp`,
+    url: `season1/ep7/S01E07img${i + 1}.webp`,
     urlDownload: `season1/ep7/S01E07-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 7 Season 1`
   })),
@@ -68,7 +68,7 @@ export const episodeImages = [
     id: `S1E08-${i + 1}`,
     season: 1,
     episode: 8,
-    url: `season1/ep8/S01E08-${i + 1}.webp`,
+    url: `season1/ep8/S01E08img${i + 1}.webp`,
     urlDownload: `season1/ep8/S01E08-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 8 Season 1`
   })),
@@ -77,7 +77,7 @@ export const episodeImages = [
     id: `S1E09-${i + 1}`,
     season: 1,
     episode: 9,
-    url: `season1/ep9/S01E09-${i + 1}.webp`,
+    url: `season1/ep9/S01E09img${i + 1}.webp`,
     urlDownload: `season1/ep9/S01E09-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 9 Season 1`
   })),
