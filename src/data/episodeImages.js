@@ -18,7 +18,6 @@ export const episodeImages = [
     urlDownload: `season1/ep2/S01E02-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 2 Season 1`
   })),
-
   // Episodio 3 - 18 imágenes
   ...Array.from({ length: 18 }, (_, i) => ({
     id: `S1E03-${i + 1}`,
@@ -27,5 +26,59 @@ export const episodeImages = [
     url: `season1/ep3/S01E03-${i + 1}.webp`,
     urlDownload: `season1/ep3/S01E03-${i + 1}.jpg`,
     alt: `Image ${i + 1} Episode 3 Season 1`
+  })),
+  // Episodio 4 - 40 imágenes
+  ...Array.from({ length: 40 }, (_, i) => ({
+    id: `S1E04-${i + 1}`,
+    season: 1,
+    episode: 4,
+    url: `season1/ep4/S01E04-${i + 1}.webp`,
+    urlDownload: `season1/ep4/S01E04-${i + 1}.jpg`,
+    alt: `Image ${i + 1} Episode 4 Season 1`
+  })),
+  // Episodio 5 - 29 imágenes
+  ...Array.from({ length: 29 }, (_, i) => ({
+    id: `S1E05-${i + 1}`,
+    season: 1,
+    episode: 5,
+    url: `season1/ep5/S01E05-${i + 1}.webp`,
+    urlDownload: `season1/ep5/S01E05-${i + 1}.jpg`,
+    alt: `Image ${i + 1} Episode 5 Season 1`
+  })),
+  // Episodio 6 - 59 imágenes
+  ...Array.from({ length: 59 }, (_, i) => ({
+    id: `S1E06-${i + 1}`,
+    season: 1,
+    episode: 6,
+    url: `season1/ep6/S01E06-${i + 1}.webp`,
+    urlDownload: `season1/ep6/S01E06-${i + 1}.jpg`,
+    alt: `Image ${i + 1} Episode 6 Season 1`
+  })),
+  // Episodio 7 - 97 imágenes
+  ...Array.from({ length: 97 }, (_, i) => ({
+    id: `S1E07-${i + 1}`,
+    season: 1,
+    episode: 7,
+    url: `season1/ep7/S01E07-${i + 1}.webp`,
+    urlDownload: `season1/ep7/S01E07-${i + 1}.jpg`,
+    alt: `Image ${i + 1} Episode 7 Season 1`
+  })),
+  // Episodio 8 - 21 imágenes
+  ...Array.from({ length: 21 }, (_, i) => ({
+    id: `S1E08-${i + 1}`,
+    season: 1,
+    episode: 8,
+    url: `season1/ep8/S01E08-${i + 1}.webp`,
+    urlDownload: `season1/ep8/S01E08-${i + 1}.jpg`,
+    alt: `Image ${i + 1} Episode 8 Season 1`
+  })),
+  // Episodio 9 - 50 imágenes
+  ...Array.from({ length: 50 }, (_, i) => ({
+    id: `S1E09-${i + 1}`,
+    season: 1,
+    episode: 9,
+    url: `season1/ep9/S01E09-${i + 1}.webp`,
+    urlDownload: `season1/ep9/S01E09-${i + 1}.jpg`,
+    alt: `Image ${i + 1} Episode 9 Season 1`
   }))
 ];
