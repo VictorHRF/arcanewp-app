@@ -7,6 +7,7 @@ import { Download } from 'yet-another-react-lightbox/plugins';
 import { TituloSeccion } from '../components/TituloSeccion'
 import { getImagesByEpisode } from '../helpers/getImagesByEpisode';
 import { EpisodeSelector } from '../components/EpisodeSelector';
+import { FadeInGridHorizontal } from '../components/FadeInGridHorizontal';
 
 export const EpisodioPage = () => {
 
@@ -20,7 +21,7 @@ export const EpisodioPage = () => {
       <EpisodeSelector />
       <TituloSeccion title={`Temporada ${season.substring(1,)} - Episodio ${episode}`} />
 
-      <div className='grid-horizontal-container'>
+      <FadeInGridHorizontal>
         {
           images.map( img => (
             <a className='horizontal-image-container' key={img.id} onClick={() => setIndex(img.id.split('-')[1]-1)}>
@@ -28,7 +29,7 @@ export const EpisodioPage = () => {
             </a>
           ))
         }
-      </div>
+      </FadeInGridHorizontal>
 
       <Lightbox
           open={index !== -1}

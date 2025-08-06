@@ -3,6 +3,7 @@ import { getEpisodesBySeason } from '../helpers';
 import { EpisodeCard } from './EpisodeCard';
 import { TituloSeccion } from './TituloSeccion';
 import { Link } from 'react-router-dom';
+import { FadeInGrid } from './FadeInGrid';
 
 export const GridEpisodes = () => {
   
@@ -13,19 +14,21 @@ export const GridEpisodes = () => {
 
       <section className='seccion'>
         <TituloSeccion title={"Temporada 1"} />
-
-        <div className='episodes-grid'>
+        <FadeInGrid>        
           {
-            temp1.map( ep => (
-              <Link className='episode-container' key={ep.id} to={`/episodios/${ep.id}`}>
+            temp1.map( (ep, index) => (
+              <Link 
+                className='episode-container' 
+                key={ep.id} 
+                to={`/episodios/${ep.id}`}>
                 <EpisodeCard key={ep.id} {...ep} />
               </Link>
               )
             )
           }
-        </div>
+        </FadeInGrid>
         <TituloSeccion title={"Temporada 2"} />
-        <div className='episodes-grid'>
+        <FadeInGrid>
           {
             temp2.map( ep => (
               <Link className='episode-container' key={ep.id} to={`/episodios/${ep.id}`}>
@@ -34,7 +37,7 @@ export const GridEpisodes = () => {
               )
             )
           }
-        </div>
+        </FadeInGrid>
       </section>
   )
 }

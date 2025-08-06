@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 import { Download } from 'yet-another-react-lightbox/plugins';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import "yet-another-react-lightbox/styles.css"
 import { getHorizontalWallpapersByCharacter } from '../helpers'
 import { TituloSeccion } from './TituloSeccion';
 import { CharacterCard } from './CharacterCard';
+import { FadeInGridHorizontal } from './FadeInGridHorizontal';
 
 export const GridHorizontal = () => {
 
@@ -19,16 +20,19 @@ export const GridHorizontal = () => {
             
             <TituloSeccion title={"Fondos Horizontales"} />
         
-            <div className='grid-horizontal-container'>
+            <FadeInGridHorizontal>
                 {
                     wallpapers.map( p => (
-                        <a className='horizontal-image-container' key={p.id} onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))} >
+                        <Link 
+                          className='horizontal-image-container' 
+                          key={p.id} 
+                          onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))} >
                             <CharacterCard character={personajeId} img={p.name} alt={p.alt} />
-                        </a>
+                        </Link>
                         )
                     )
                 }
-            </div>
+            </FadeInGridHorizontal>
 
             <Lightbox
                 open={index !== -1}

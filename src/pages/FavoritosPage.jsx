@@ -6,6 +6,7 @@ import { Download } from 'yet-another-react-lightbox/plugins';
 import { Encabezado } from '../components/Encabezado'
 import { TituloSeccion } from '../components/TituloSeccion'
 import { favoriteWallpapers } from '../data/favoriteWallpapers'
+import { FadeInGridHorizontal } from '../components/FadeInGridHorizontal';
 
 
 export const FavoritosPage = () => {
@@ -19,7 +20,7 @@ const [index, setIndex] = useState(-1);
       <section className='seccion'>
         <TituloSeccion title={'Fondos favoritos'} />
 
-          <div className='grid-horizontal-container'>
+          <FadeInGridHorizontal>
 
             {
               favoriteWallpapers.map( fav => (
@@ -28,7 +29,7 @@ const [index, setIndex] = useState(-1);
                 </a>
               ))
             }
-          </div>
+          </FadeInGridHorizontal>
 
         <Lightbox
           open={index !== -1}
