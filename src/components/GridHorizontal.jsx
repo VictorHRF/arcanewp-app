@@ -17,10 +17,8 @@ export const GridHorizontal = () => {
      
     return (
         <section className='seccion'>
-            
             <TituloSeccion title={"Fondos Horizontales"} />
-        
-            <FadeInGridHorizontal>
+            <FadeInGridHorizontal key={personajeId}>
                 {
                     wallpapers.map( p => (
                         <Link 
@@ -33,13 +31,15 @@ export const GridHorizontal = () => {
                     )
                 }
             </FadeInGridHorizontal>
-
             <Lightbox
                 open={index !== -1}
                 index={index}
                 controller={ {closeOnBackdropClick: true, closeOnPullDown: true} }
                 close={() => setIndex(-1)}
-                slides={wallpapers.map( p => ({ src: `/images/characters/${personajeId}/${p.name}`, alt: p.alt, download: `/images/characters/${personajeId}/${p.name}?download` }) )}
+                slides={wallpapers.map( p => ({ 
+                        src: `/images/characters/${personajeId}/${p.name}`, 
+                        alt: p.alt, 
+                        download: `/images/characters/${personajeId}/${p.name}?download` }))}
                 plugins={[Download]}
             />
         </section>

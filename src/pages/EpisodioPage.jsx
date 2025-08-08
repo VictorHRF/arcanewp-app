@@ -21,7 +21,7 @@ export const EpisodioPage = () => {
       <EpisodeSelector />
       <TituloSeccion title={`Temporada ${season.substring(1,)} - Episodio ${episode}`} />
 
-      <FadeInGridHorizontal>
+      <FadeInGridHorizontal key={seasonId}>
         {
           images.map( img => (
             <a className='horizontal-image-container' key={img.id} onClick={() => setIndex(img.id.split('-')[1]-1)}>

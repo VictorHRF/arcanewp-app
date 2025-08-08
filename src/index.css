@@ -539,6 +539,7 @@ footer a {
 }
 
 .vertical-image-container {
+  display: flex;
   position: relative;
   aspect-ratio: 9/20;
   border: 4px solid rgba(0, 0, 0, 1);

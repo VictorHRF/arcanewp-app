@@ -5,6 +5,7 @@ import { getVerticalWallpaperByCharacter } from '../helpers/getVerticalWallpaper
 import { Link, useParams } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import { Download } from 'yet-another-react-lightbox/plugins';
+import { FadeInGridVertical } from './FadeInGridVertical';
 
 
 export const GridVertical = () => {
@@ -18,7 +19,7 @@ export const GridVertical = () => {
           
           <TituloSeccion title={"Fondos verticales"} />
     
-          <div className='grid-vertical-container'>
+          <FadeInGridVertical key={personajeId}>
               {
                 wallpapers.map( p => (
                   <Link className='vertical-image-container' key={p.alt} onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))}>
@@ -27,7 +28,7 @@ export const GridVertical = () => {
                   )
                 )
               }
-            </div>
+            </FadeInGridVertical>
 
             <Lightbox
                 open={index !== -1}
