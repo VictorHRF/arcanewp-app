@@ -7,14 +7,6 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #0e0e0e;
 
-  background-image: 
-    repeating-linear-gradient(22.5deg, transparent, transparent 2px, rgba(129, 1, 138, 0.141) 2px, rgba(44, 53, 145, 0.136) 3px, transparent 3px, transparent 8px),
-    repeating-linear-gradient(67.5deg, transparent, transparent 2px, rgba(130, 0, 139, 0.135) 2px, rgba(40, 49, 126, 0.112) 3px, transparent 3px, transparent 8px),
-    repeating-linear-gradient(112.5deg, transparent, transparent 2px, rgba(126, 7, 137, 0.124) 2px, rgba(50, 57, 141, 0.136) 3px, transparent 3px, transparent 8px),
-    repeating-linear-gradient(157.5deg, transparent, transparent 2px, rgba(132, 5, 141, 0.136) 2px, rgba(58, 65, 144, 0.122) 3px, transparent 3px, transparent 8px),
-    linear-gradient(to right, transparent 25%, rgba(255, 13, 106, 0.100), transparent 100%),
-    linear-gradient(to right, transparent 0%, rgba(0, 89, 255, 0.100), transparent 75%);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,6 +22,25 @@
 html, body {
   margin: 0;
   padding: 0;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  background-image: 
+    repeating-linear-gradient(22.5deg, transparent, transparent 2px, rgba(129, 1, 138, 0.141) 2px, rgba(44, 53, 145, 0.136) 3px, transparent 3px, transparent 8px),
+    repeating-linear-gradient(67.5deg, transparent, transparent 2px, rgba(130, 0, 139, 0.135) 2px, rgba(40, 49, 126, 0.112) 3px, transparent 3px, transparent 8px),
+    repeating-linear-gradient(112.5deg, transparent, transparent 2px, rgba(126, 7, 137, 0.124) 2px, rgba(50, 57, 141, 0.136) 3px, transparent 3px, transparent 8px),
+    repeating-linear-gradient(157.5deg, transparent, transparent 2px, rgba(132, 5, 141, 0.136) 2px, rgba(58, 65, 144, 0.122) 3px, transparent 3px, transparent 8px),
+    linear-gradient(to right, transparent 25%, rgba(255, 13, 106, 0.100), transparent 100%),
+    linear-gradient(to right, transparent 0%, rgba(0, 89, 255, 0.100), transparent 75%);
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 @keyframes fadeInUp {
