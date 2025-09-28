@@ -538,9 +538,11 @@ footer a {
 }
 
 .horizontal-image-container {
+  background-color: #ccc;
   display: flex;
   width: 100%;
   aspect-ratio: 16/9;
+  overflow: hidden;
   border: 4px solid rgba(0, 0, 0, 1);
 }
 
@@ -564,10 +566,7 @@ footer a {
 .image-bg {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
 }
 
 /* Character / Episode Selector */
