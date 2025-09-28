@@ -552,6 +552,7 @@ footer a {
 }
 
 .vertical-image-container {
+  background-color: #d19d00;
   display: flex;
   position: relative;
   aspect-ratio: 9/20;

@@ -9,7 +9,7 @@ export const FadeInGridVertical = ({children}) => {
                     style={{
                         opacity: 0,
                         animation: `fadeInUp 0.5s ease-out forwards`,
-                        animationDelay: `${index * 0.05}s`
+                        animationDelay: `${index * 0.1}s`
                     }} 
                 >
                     {child}
