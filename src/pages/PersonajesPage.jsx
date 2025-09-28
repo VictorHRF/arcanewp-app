@@ -2,6 +2,7 @@ import React from 'react'
 import { Encabezado } from '../components/Encabezado'
 import { GridPersonajes } from '../components/GridPersonajes'
 import { Outlet, useMatch } from 'react-router-dom';
+import BotonSubir from '../components/BotonSubir';
 
 export const PersonajesPage = () => {
 
@@ -14,6 +15,8 @@ export const PersonajesPage = () => {
       {
         match ? <GridPersonajes /> : <Outlet />
       }
+
+      <BotonSubir />
     </div>
   ) 
 }

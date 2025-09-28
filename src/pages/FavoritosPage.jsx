@@ -7,6 +7,7 @@ import { Encabezado } from '../components/Encabezado'
 import { TituloSeccion } from '../components/TituloSeccion'
 import { favoriteWallpapers } from '../data/favoriteWallpapers'
 import { FadeInGridHorizontal } from '../components/FadeInGridHorizontal';
+import BotonSubir from '../components/BotonSubir';
 
 
 export const FavoritosPage = () => {
@@ -41,6 +42,7 @@ const [index, setIndex] = useState(-1);
         />
         
       </section>
+      <BotonSubir />
     </>
   )
 }
