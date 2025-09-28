@@ -22,7 +22,10 @@ export const GridVertical = () => {
           <FadeInGridVertical key={personajeId}>
               {
                 wallpapers.map( p => (
-                  <Link className='vertical-image-container' key={p.alt} onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))}>
+                  <Link 
+                    className='vertical-image-container' 
+                    key={p.alt} 
+                    onClick={() => setIndex( parseInt(p.id.match(/\d+/) ))}>
                     <CharacterCard key={ p.alt } character={personajeId} img={p.name} alt={p.alt} />
                   </Link>
                   )
